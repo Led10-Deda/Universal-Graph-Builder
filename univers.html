@@ -1,0 +1,60 @@
+<!-- *****Created by Ledio Deda*****
+     *****Extra credit to Kirk Schafer***** -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphic Builder</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+ <body>
+     <h1>Universal Graphic Builder</h1>
+     <details>
+         <summary>How to write the function</summary>
+             <p>Here you can build any kind of function graph, as long as you write the function based on some rules:
+             <ul>
+                 <li>Always use the <b>variable x </b> and write in <b>lowercase type.</b></li>
+                 <li>Use the following operators: + , - , * , / .</li>
+                 <li>To make specific functions like <i> trigonometric, logarithmic or exponential</i> ones, use the given keyboard.</li>
+                 <li>Use this syntax for:
+                     <ol>
+                         <li>Power--><br/> <i>Math.pow(a,b)</i> where <b>a</b> is the base and <b>b</b> is the exponent.</li>
+                         <li>Logarithm --> <i>Math.log(a)/Math.log(b)</i> where <b>b</b> is the base and <b>a</b> is the expression.</li>
+                         <li>Sine, Cosine or Tangent--><br/><i>Math.sin(a)</i> where <b>a</b> is the expression.</li>
+                    </ol></li>
+                </ul></p>
+            </details>
+   <div id="keyfunc">
+       <div id="wrf">Write your function</div>
+       <button id="clearWrite">C</button>
+       <button id="pi" onclick="out('Math.PI')">π</button>
+       <button id="e" onclick="out('Math.E')">e</button>
+       <button id="pow" onclick="out('Math.pow(,)')">pow</button>
+       <button id="log" onclick="out('Math.log()/Math.log()')">log</button>
+       <button id="sin" onclick="out('Math.sin(x)')">sin</button>
+       <button id="cos" onclick="out('Math.cos(x)')">cos</button>
+       <button id="tan" onclick="out('Math.tan(x)')">tan</button>
+       <textarea id="func" type="number" placeholder="Write the function to build. 
+Don't include y="></textarea>
+       <button class="bg" id="build">Build</button>
+       <button class="bg" id="clear">Clear</button>
+       <button class="bg" id="empty">Clear all</button>
+   </div>
+   <details>
+       <summary>Find a value for a given x</summary>
+       <div id="point">
+           <p>You can enter the x and find the y of that point.</p>
+           <input id="getx" type="text" placeholder="x" />
+           <button id="find">Find the value</button>
+           <div id="gety">The value</div>
+       </div> 
+   </details>
+   <canvas id="can" width="340px" height="500px"></canvas>
+   <canvas id="bosht" width="340px" height="500px"></canvas>
+   <p id="copy">&copy; Code by Ledio Deda</p>
+   <script>
+         function out(n) {
+             var exist = document.getElementById("func");
+             exist.value+=n;
+         };
+   </script>                                          </body>
+</html>
