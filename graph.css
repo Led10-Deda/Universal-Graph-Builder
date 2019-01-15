@@ -1,0 +1,104 @@
+/* *****Created by Ledio Deda*****
+      *****Extra credit to Kirk Schafer*** */
+body {
+    background-color:#CCDDEE;
+}
+h1 {
+    color:white;
+    text-shadow:3px 3px blue;
+    background-color:deepSkyBlue;
+    text-align:center;
+    box-shadow:3px 3px blue;
+}
+p {
+    text-align:justify;
+}
+summary {
+    font-weight:900;
+    font-size:17px;
+    padding:5px;
+    margin:5px 0px;
+    border:1px solid darkblue;
+    background-color:#AABBCC;
+}
+summary:active {
+    background-color:#88AADD;
+}
+#wrf {
+    font-size:17px;
+    font-weight:900;
+    text-align:center;
+}
+#keyfunc {
+    background-color:#BBCCDD;
+    padding:10px;
+    border-top:3px solid #AABBCC;
+}
+textarea {
+    width:100%;
+    text-align:center;
+}
+textarea:focus, input:focus {
+    background-color:#88AABB;
+    box-shadow:3px 3px 3px #AA8866;
+}
+button {
+    width:10%;
+    height:25px;
+    margin:5px 0.7%;
+    font-size:11px;
+}
+#clearWrite {
+    background-color:red;
+    color:white;
+    border-radius:10%;
+}
+.bg {
+    font-family:serif;
+    width:20%;
+    height:30px;
+    font-weight:900;
+    font-size:17px;
+}
+#build {
+    color:red;
+}
+#clear {
+    color:blue;  
+}
+#empty {
+    color:green;
+    width:30%;
+}
+#can {
+    border:2px dashed darkblue;
+    position:relative;
+    top:0px;
+      z-index:4;
+}
+#bosht {
+    position:relative; 
+    border:2px dashed darkblue;
+    background-color:#FEFFFF;
+      z-index:1;
+}
+#point {
+    background-color:#AABBCC;
+    padding:10px;
+    border-top:3px solid #99AABB;
+}
+#getx {
+    width:50px;
+    text-align:center;
+}
+#find {
+    width:100px;
+}
+#gety {
+    min-width:120px;
+    height:22px;
+    border:1px solid grey;
+    display:inline-block;
+    text-align:center;
+    background-color:#8899AA;
+}
